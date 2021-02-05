@@ -3,7 +3,7 @@ import { BrowserModule } from "@angular/platform-browser";
 import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
-import { ImpersonatorCheckerDirective } from "./impersonator";
+import { ImpersonatorCheckerDirective } from "./impersonator-checker.directive";
 import { UserService } from "./user.service";
 
 @NgModule({
