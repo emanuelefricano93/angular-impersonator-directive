@@ -7,7 +7,7 @@ import { UserService } from "./user.service";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent implements OnInit {
-  name = "You are in Impersonator mode";
+  description = "You are in Impersonator mode";
   buttonName = "";
 
   constructor(private userService: UserService) {}
@@ -15,10 +15,10 @@ export class AppComponent implements OnInit {
     this.userService.canImpersonate.subscribe(res => {
       if (res) {
         this.buttonName = "prevent operations";
-        this.name = "You can do all operations in impersonator mode";
+        this.description = "You can do all operations in impersonator mode";
       } else {
         this.buttonName = "allow operations";
-        this.name = "You cannot do some operation in impersonator mode";
+        this.description = "You cannot do some operation in impersonator mode";
       }
     });
   }
