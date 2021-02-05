@@ -1,0 +1,21 @@
+<h1>Hello, {{ name }}!</h1>
+
+<button class="change-mode" (click)="changeMode()">{{buttonName}}</button>
+
+<div class="container">
+  <button (click)="onClick(1)">
+    You can always click me, no impersonator check
+  </button>
+
+  <button impersonatorChecker (click)="onClick(2)">
+    There is the check
+  </button>
+
+  <button impersonatorChecker [anotherCondition]="true" (click)="onClick(3)">
+    There is the check but the other condition is true
+  </button>
+
+  <button impersonatorChecker [anotherCondition]="false" (click)="onClick(4)">
+    There is the check but the other condition is false
+  </button>
+</div>

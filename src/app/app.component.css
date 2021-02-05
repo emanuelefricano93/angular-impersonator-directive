@@ -1,0 +1,24 @@
+p {
+  font-family: Lato;
+}
+
+button {
+  border-radius: 7px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-color: orange;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.change-mode {
+  margin-bottom: 50px;
+  color: white;
+  background-color: blue;
+  border: solide 1px blue;
+}
