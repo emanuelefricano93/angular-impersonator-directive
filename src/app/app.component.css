@@ -9,6 +9,7 @@ button {
   margin-bottom: 10px;
   background-color: orange;
   color: white;
+  border: solid 2px black;
 }
 
 .container {
@@ -20,5 +21,4 @@ button {
   margin-bottom: 50px;
   color: white;
   background-color: blue;
-  border: solide 1px blue;
 }

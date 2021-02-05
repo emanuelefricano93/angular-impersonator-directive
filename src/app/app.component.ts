@@ -14,10 +14,10 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     this.userService.canImpersonate.subscribe(res => {
       if (res) {
-        this.buttonName = "prevent";
+        this.buttonName = "prevent operations";
         this.name = "You can do all operations in impersonator mode";
       } else {
-        this.buttonName = "allow";
+        this.buttonName = "allow operations";
         this.name = "You cannot do some operation in impersonator mode";
       }
     });
