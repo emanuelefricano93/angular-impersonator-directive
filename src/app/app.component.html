@@ -1,7 +1,9 @@
 <h1>Impersonator example</h1>
 
-<p>{{ description }}!</p>
 
+<div [ngClass]="(userService.impersonatorAllowed$ | async) ? 'green' : 'red'">
+	<p>{{ description }}!</p>
+</div>
 <button class="change-mode" (click)="changeMode()">{{buttonName}}</button>
 
 <div class="container">

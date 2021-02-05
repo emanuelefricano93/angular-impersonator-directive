@@ -1,5 +1,21 @@
+div.red > p::before {
+  content: "☹";
+}
+
+div.green > p::before {
+  content: "㋡";
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
 p {
-  font-family: Lato;
+  font-size: 20px;
 }
 
 button {

@@ -3,13 +3,13 @@ import { BehaviorSubject } from "rxjs";
 
 @Injectable()
 export class UserService {
-  canImpersonate: BehaviorSubject<boolean> = new BehaviorSubject(false);
+  impersonatorAllowed$: BehaviorSubject<boolean> = new BehaviorSubject(false);
 
-  changeCanImpersonate() {
-    this.canImpersonate.next(!this.canImpersonate.getValue());
+  changeimpersonatorAllowed() {
+    this.impersonatorAllowed$.next(!this.impersonatorAllowed$.getValue());
   }
 
-  canImpersonator(): boolean {
-    return this.canImpersonate.getValue();
+  isImpersonatorAllowed(): boolean {
+    return this.impersonatorAllowed$.getValue();
   }
 }
